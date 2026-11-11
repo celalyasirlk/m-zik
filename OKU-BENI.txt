@@ -1,0 +1,8 @@
+KURULUM (kod yazmadan)
+1) github.com'da ücretsiz hesap açın, "New repository" ile boş bir depo oluşturun.
+2) "uploading an existing file" bağlantısına tıklayın. ZIP'i açıp İÇİNDEKİ tüm dosya ve klasörleri
+   (.github klasörü dahil) sürükleyip bırakın, "Commit changes" deyin.
+3) Üstteki "Actions" sekmesine girin, "APK derle" işleminin yeşil tik olmasını bekleyin (~5-8 dk).
+4) İşleme tıklayın, en altta "muzik-apk" dosyasını indirin, ZIP'ten app-release.apk'yı çıkarın.
+5) APK'yı telefona aktarın, açın, "bilinmeyen kaynaklardan yükleme"ye izin verin ve kurun.
+6) Uygulamayı açınca müzik iznini verin.
