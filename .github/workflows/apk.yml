@@ -13,6 +13,8 @@ jobs:
         with: { channel: stable }
       - run: flutter create --platforms=android --org com.kisisel --project-name benim_muzik .
       - run: python3 tools/patch.py
+      - name: Gradle JVM ayari
+        run: printf '\nkotlin.jvm.target.validation.mode=warning\n' >> android/gradle.properties
       - run: flutter pub get
       - name: Eklenti uyumluluk düzeltmesi
         run: |
