@@ -20,6 +20,7 @@ jobs:
         run: |
           for f in $(find ~/.pub-cache -path '*on_audio_query_android*/android/build.gradle'); do
             grep -q namespace "$f" || sed -i "s/^android {/android {\n    namespace 'com.lucasjosino.on_audio_query'/" "$f"
+            sed -i -E 's/compileSdk(Version)?[ =]+[0-9]+/compileSdkVersion 35/' "$f"
           done
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
